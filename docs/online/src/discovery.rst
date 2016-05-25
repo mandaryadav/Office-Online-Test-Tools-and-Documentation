@@ -364,6 +364,16 @@ Placeholder values
         This value can be set to ``1`` to indicate that the current user is a business user. This placeholder value
         must be used by hosts that support the business user flow. See :ref:`Business editing` for more information.
 
+    VALIDATOR_TEST_CATEGORY
+       This value is used to run the :ref:`Wopi Validation application` in different modes.    
+       This value represents the type of Office client for which the hosts are interested in fetching and executing the Validator
+       tests. 
+       This value can be set to either "All", "OfficeOnline" or "OfficeNativeClient". Its default value is set to "All".
+       * Setting this value to "All" will fetch the tests in all categories.
+       * Setting this value to "OfficeOnline" will fetch the tests specific to OfficeOnline and the client agnostic tests.
+       * Setting this value to "OfficeNativeClient" will fetch the tests specific to Native clients i.e. iOS or Android etc. and the
+         client agnostic tests. 
+
 
 ..  _Appending WOPISrc:
 
